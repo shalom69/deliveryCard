@@ -12,8 +12,8 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class SelenideTest {
 
-    private String generateDate(int addDays, String pattern) {
-        return LocalDate.now().plusDays(addDays).format(DateTimeFormatter.ofPattern(pattern));
+    private String generateDate() {
+        return LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
     @Test
@@ -21,10 +21,10 @@ public class SelenideTest {
         Configuration.holdBrowserOpen = true;
         open("http://localhost:9999/");
         $("[data-test-id='city'] input").setValue("Сочи");
-        String currentDate = generateDate(3, "dd.MM.yyyy");
+        String currentDate = generateDate();
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id='date'] input").setValue(currentDate);
-        $("[data-test-id='name'] input").setValue("Маруся Кошкина");
+        $("[data-test-id='name'] input").setValue("Мира Бабушкина");
         $("[data-test-id='phone'] input").setValue("+79991112233");
         $x("//label").click();
         $x("//span[text()='Забронировать']").click();
