@@ -7,7 +7,7 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11
 
-// кодировка файлов (если используете русский язык в файлах)
+
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
@@ -19,10 +19,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     testImplementation 'com.codeborne:selenide:6.10.1'
-    // https://mvnrepository.com/artifact/com.codeborne/selenide
-    //implementation 'com.codeborne:selenide:6.10.1'
-
-    //'com.codeborne:selenide:5.19.0'
+    
 }
 
 test {
