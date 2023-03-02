@@ -20,7 +20,7 @@ public class SelenideTest {
     void positiveTest() {
         Configuration.holdBrowserOpen = true;
         open("http://localhost:9999/");
-        $("[data-test-id='city'] input").setValue("Сочи");
+        $("[data-test-id='city'] input").setValue("Москва");
         String currentDate = generateDate();
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id='date'] input").setValue(currentDate);
