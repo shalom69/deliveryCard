@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/6ug0vgi984qs1x2d?svg=true)](https://ci.appveyor.com/project/shalom69/deliverycard-ebbks)
+[![Build status](https://ci.appveyor.com/api/projects/status/jox6l0w5edfwc2hx?svg=true)](https://ci.appveyor.com/project/shalom69/deliverycard-5s3mu)
